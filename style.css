@@ -410,13 +410,6 @@ body, html {
   left: 80%;
   top: 10%;
 }
-/*.level10 {
-  background-image: url("treachery.jpeg");
-  background-size: cover;
-  min-height: 80vh;
-  background-position: center center;
-  position: relative;
-}*/
 
 
 /* PROF NOTE: Used to hide the extra elements on desktop sizes */
@@ -476,6 +469,10 @@ body, html {
   }
 
   .levelContainer img.levelBG {
+    display: none;
+  }
+
+  #img0_2, #img0_3, #img0_4, #img0_5, #img0_6 {
     display: none;
   }
 
