@@ -476,7 +476,8 @@ body, html {
   }
 
   #img0 {
-
+    position: absolute;
+    top: 5%;
   }
 
   #img0_2, #img0_3, #img0_4, #img0_5, #img0_6 {
