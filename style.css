@@ -1,0 +1,490 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  /* PROF NOTE: This padding was causing the extra space on the sides */
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  overflow: hidden; /* PROF NOTE: Fix to hide extra space on the right */
+}
+
+.levelContainer {
+  position: relative;
+}
+
+.levelBG {
+  width: 100%;
+  display: flex; /* PROF NOTE: Setting images to flex is a weird trick to fix extra blank space at the bottom of images inside of divs */
+}
+
+/* PROF NOTE: Ensuring every image except levelBGs are absolute positioned, so they don't occupy physical space on the page */
+.levelContainer img:not(.levelBG) {
+  position: absolute;
+  /* PROF NOTE: Every absolutely positioned element needs a top or bottom and left or right position
+                so it doesn't occupy physical space on the page. I've defaulted them all to 0% here,
+                which will be overwritten by any specific values you give them later down in the CSS */
+  top: 0%;
+  left: 0%;
+}
+
+.level1 {
+    /* background-image: url(newEntrance.png); */
+    /* background-size: cover; */
+    /* min-height: 80vh; */
+    /* background-position: center center; */
+    /* position: relative; */
+}
+#img {
+  position: absolute;
+  /* left: 75%; */
+}
+#img0 {
+  position: absolute;
+  top: 16%;
+  left: 25%;
+}
+#img0_1 {
+  position: absolute;
+  top: 52%;
+  left: 80%;
+}
+#img0_2 {
+  position: absolute;
+  top: 51%;
+  left: 31%;
+}
+#img0_3 {
+  position: absolute;
+  top: 54%;
+  left: 34%;
+}
+#img0_4 {
+  position: absolute;
+  top: 58%;
+  left: 31%;
+}
+#img0_5 {
+  position: absolute;
+  top: 60%;
+  left: 36%;
+}
+#img0_6 {
+  position: absolute;
+  top: 62%;
+  left: 33%;
+}
+#img0_7 {
+  position: absolute;
+  top: 80%;
+  left: 60%;
+}
+#img0_8 {
+  position: absolute;
+  top: 50%;
+  left: 85.5%;
+}
+#img0_9 {
+  position: absolute;
+  top: 53%;
+  left: 5%;
+}
+#img0_10 {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+}
+/* Level 2: Lust*/
+.level2 {
+  /* background-image: url("limbo.jpeg");
+  background-size: cover;
+  min-height: 80vh;
+  background-position: center center;
+  position: relative; */
+}
+#img1 {
+  position: absolute;
+  top: 10%;
+  left: 47%;
+}
+#img1_1 {
+  position: absolute;
+  top: 5%;
+  left: 92%;
+}
+#img2 {
+  position: absolute;
+  top: 17%;
+  left: 804;
+}
+#img2_1 {
+  position: absolute;
+  top: 55%;
+  left: 76%;
+}
+#img2_2 {
+  position: absolute;
+  top: 2%;
+  left: 48%;
+}
+#img2_3 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  border: 10px solid black;
+}
+#img2_4 {
+  position: absolute;
+  top: 22%;
+  left: 14%;
+}
+#img2_5 {
+  position: absolute;
+  top: 5%;
+  left: 78%;
+}
+#img2_6 {
+  position: absolute;
+  top: 65%;
+  left: 38%;
+}
+#img2_7 {
+  position: absolute;
+  top: 81%;
+}
+.level3 {
+  /* background-image: url("lust.png");
+  background-size: cover;
+  min-height: 80vh;
+  background-position: center center;
+  position: relative; */
+}
+#img3 {
+  position: absolute;
+  top: 72%;
+}
+#img3_1 {
+  position: absolute;
+  top: 65%;
+  left: 63%;
+}
+#img3_2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+#img3_3 {
+  position: absolute;
+  top: 11%;
+  left: 49%;
+}
+#img3_4 {
+  position: absolute;
+  top: 11%;
+  left: 2%;
+}
+#img3_5 {
+  position: absolute;
+  top: 30%;
+  left: 85%;
+}
+#img3_6 {
+  position: absolute;
+  left: 17%;
+}
+#img3_7 {
+  position: absolute;
+  top: 36%;
+  left: 20%;
+}
+#img3_8 {
+  position: absolute;
+  top: 60%;
+  left: 32%;
+}
+.level4 {
+  /* background-image: url("gluttony.png");
+  background-size: cover;
+  min-height: 90vh;
+  background-position: center center;
+  position: relative; */
+}
+#img4 {
+  position: absolute;
+  top: 25%;
+  left: 75%;
+}
+#img4_1 {
+  position: absolute;
+  top: 81%;
+  left: 27%;
+}
+#img4_2 {
+  position: absolute;
+  top: 64%;
+  left: 60%;
+}
+#img4_3 {
+  position: absolute;
+  top: 48%;
+  left: 7%;
+}
+#img4_4 {
+  position: absolute;
+  top: 40%;
+  left:80%;
+}
+#img4_5 {
+  position: absolute;
+  top: 83%;
+  left: 7%;
+}
+#img4_6 {
+  position: absolute;
+  top: 5%;
+  left: 2%;
+}
+#img4_7 {
+  position: absolute;
+  top: 58%;
+  left:35%;
+}
+#img4_8 {
+  position: absolute;
+  top:80%;
+  left: 50%;
+}
+#img4_9 {
+  position: absolute;
+  top: 70%;
+  left: 65%;
+}
+.level5 {
+  /* background-image: url("greed.jpeg");
+  background-size: cover;
+  min-height: 80vh;
+  background-position: center center;
+  position: relative; */
+}
+#img5 {
+  position: absolute;
+  top: 51%;
+  left: 60%;
+}
+#img5_1 {
+  position: absolute;
+  top: 64%;
+}
+#img5_2 {
+  position: absolute;
+  top: 38%;
+  left: 84%;
+}
+#img5_3 {
+  position: absolute;
+  top: 5%;
+  left: 19%;
+}
+#img5_4 {
+  position: absolute;
+  top: 40%;
+  left:20%;
+}
+#img5_5 {
+  position: absolute;
+  top: 47%;
+  left: 45%;
+}
+.level6 {
+  /* background-image: url("anger.jpeg");
+  background-size: cover;
+  min-height: 80vh;
+  background-position: center center;
+  position: relative; */
+}
+#img6 {
+  position: absolute;
+  top: 13%;
+  left: 10%;
+}
+#img6_1 {
+  position: absolute;
+  left: 80%;
+}
+#img6_2 {
+  position: absolute;
+  top: 53%;
+  left: 60%;
+}
+#img6_3 {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+}
+.level7 {
+  /* background-image: url("heresy.jpeg");
+  background-size: cover;
+  min-height: 80vh;
+  background-position: center center;
+  position: relative; */
+}
+#img7 {
+  position: absolute;
+  top: 54%;
+  left: 75%;
+}
+#img7_1 {
+  position: absolute;
+  top: 44%;
+}
+#img7_2 {
+  position: absolute;
+  top: 2%;
+  left: 77%;
+}
+#img7_3 {
+  position: absolute;
+  top:19%;
+  left: 54%;
+}
+#img7_4 {
+  position: absolute;
+  top: 45%;
+  left: 27%;
+}
+#img7_5 {
+  position: absolute;
+  top: 45%;
+  left: 57%;
+}
+.level8 {
+  /* background-image: url("violence.jpeg");
+  background-size: cover;
+  min-height: 80vh;
+  background-position: center center;
+  position: relative; */
+}
+#img8 {
+  position: absolute;
+  top: 68%;
+  left: 46%;
+}
+#img8_1 {
+  position: absolute;
+  top: 74%;
+  left: 87%;
+}
+#img8_2 {
+  position: absolute;
+  top: 80%;
+  left:80%;
+}
+#img8_3 {
+  position: absolute;
+  top: 20%;
+  left: 67%;
+}
+.level9 {
+  /* background-image: url("fraud.jpeg");
+  background-size: cover;
+  min-height: 80vh;
+  background-position: center center;
+  position: relative; */
+}
+#img9 {
+  position: absolute;
+  top:55%;
+}
+#img9_1 {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+}
+#img9_2 {
+  position: absolute;
+  left: 80%;
+  top: 10%;
+}
+/*.level10 {
+  background-image: url("treachery.jpeg");
+  background-size: cover;
+  min-height: 80vh;
+  background-position: center center;
+  position: relative;
+}*/
+
+
+/* PROF NOTE: Used to hide the extra elements on desktop sizes */
+.levelContainer > h2, .levelContainer > h3 {
+  display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    color: #eee;
+    font-size: 3vw;
+  }
+
+  .levelContainer > h2, .levelContainer > h3 {
+    display: block;
+    text-shadow: 0px 0px 4px #000;
+  }
+
+  h2 {
+    font-style: italic;
+    letter-spacing: 0.6em;
+    padding: 2vw;
+    border-bottom: 1px solid white;
+  }
+
+  .levelContainer:not(.level1) {
+    position: relative !important;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 10vw;
+    grid-row-gap: 10vw;
+    align-items: center;
+    padding: 5vw;
+  }
+
+  .mobileLevelHeading {
+    grid-column-end: span 2;
+  }
+
+  .levelContainer img:not(.levelBG) {
+    position: static !important;
+    /* background-color: #ff0072; */
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+  }
+
+  .levelContainer {
+    background-size: cover;
+    position: center center;
+    background-attachment: fixed;
+    box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.6);
+  }
+
+  .levelContainer img.levelBG {
+    display: none;
+  }
+
+  .level2 {
+    background-image: url('limbo1.jpg');
+
+  }
+
+  .level3 {
+    background-image: url('lust.png');
+  }
+}
