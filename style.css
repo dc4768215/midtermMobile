@@ -469,14 +469,14 @@ body, html {
     display: none;
   }
   .mobileLvl1 {
-    background-image: url("mobileLvl1.jpeg");
-    background-size: cover;
-    background-position: center center;
-    position: relative;
+    background-image: url("mobileLvl1.jpeg") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    position: relative !important;
   }
 
   #img0 {
-    
+
   }
 
   #img0_2, #img0_3, #img0_4, #img0_5, #img0_6 {
