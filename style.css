@@ -30,13 +30,7 @@ body, html {
   left: 0%;
 }
 
-.level1 {
-    /* background-image: url(newEntrance.png); */
-    /* background-size: cover; */
-    /* min-height: 80vh; */
-    /* background-position: center center; */
-    /* position: relative; */
-}
+
 #img {
   position: absolute;
   /* left: 75%; */
@@ -96,14 +90,7 @@ body, html {
   top: 20%;
   left: 60%;
 }
-/* Level 2: Lust*/
-.level2 {
-  /* background-image: url("limbo.jpeg");
-  background-size: cover;
-  min-height: 80vh;
-  background-position: center center;
-  position: relative; */
-}
+
 #img1 {
   position: absolute;
   top: 10%;
@@ -133,7 +120,7 @@ body, html {
   position: absolute;
   top: 5%;
   left: 5%;
-  border: 10px solid black;
+  /*border: 10px solid black;*/
 }
 #img2_4 {
   position: absolute;
@@ -154,13 +141,7 @@ body, html {
   position: absolute;
   top: 81%;
 }
-.level3 {
-  /* background-image: url("lust.png");
-  background-size: cover;
-  min-height: 80vh;
-  background-position: center center;
-  position: relative; */
-}
+
 #img3 {
   position: absolute;
   top: 72%;
@@ -203,13 +184,6 @@ body, html {
   position: absolute;
   top: 60%;
   left: 32%;
-}
-.level4 {
-  /* background-image: url("gluttony.png");
-  background-size: cover;
-  min-height: 90vh;
-  background-position: center center;
-  position: relative; */
 }
 #img4 {
   position: absolute;
@@ -261,13 +235,6 @@ body, html {
   top: 70%;
   left: 65%;
 }
-.level5 {
-  /* background-image: url("greed.jpeg");
-  background-size: cover;
-  min-height: 80vh;
-  background-position: center center;
-  position: relative; */
-}
 #img5 {
   position: absolute;
   top: 51%;
@@ -297,13 +264,6 @@ body, html {
   top: 47%;
   left: 45%;
 }
-.level6 {
-  /* background-image: url("anger.jpeg");
-  background-size: cover;
-  min-height: 80vh;
-  background-position: center center;
-  position: relative; */
-}
 #img6 {
   position: absolute;
   top: 13%;
@@ -322,13 +282,6 @@ body, html {
   position: absolute;
   top: 70%;
   left: 5%;
-}
-.level7 {
-  /* background-image: url("heresy.jpeg");
-  background-size: cover;
-  min-height: 80vh;
-  background-position: center center;
-  position: relative; */
 }
 #img7 {
   position: absolute;
@@ -359,13 +312,6 @@ body, html {
   top: 45%;
   left: 57%;
 }
-.level8 {
-  /* background-image: url("violence.jpeg");
-  background-size: cover;
-  min-height: 80vh;
-  background-position: center center;
-  position: relative; */
-}
 #img8 {
   position: absolute;
   top: 68%;
@@ -386,13 +332,6 @@ body, html {
   top: 20%;
   left: 67%;
 }
-.level9 {
-  /* background-image: url("fraud.jpeg");
-  background-size: cover;
-  min-height: 80vh;
-  background-position: center center;
-  position: relative; */
-}
 #img9 {
   position: absolute;
   top:55%;
@@ -408,7 +347,6 @@ body, html {
   top: 10%;
 }
 
-
 /* PROF NOTE: Used to hide the extra elements on desktop sizes */
 .levelContainer > h2, .levelContainer > h3 {
   display: none;
@@ -417,83 +355,26 @@ body, html {
 
 @media only screen and (max-width: 600px) {
 
-  body {
-    color: #eee;
-    font-size: 3vw;
-  }
-
-  .levelContainer > h2, .levelContainer > h3 {
-    display: block;
-    text-shadow: 0px 0px 4px #000;
-  }
-
-  h2 {
-    font-style: italic;
-    letter-spacing: 0.6em;
-    padding: 2vw;
-    border-bottom: 1px solid white;
-  }
-
-  .levelContainer:not(.level1) {
-    position: relative !important;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-column-gap: 10vw;
-    grid-row-gap: 10vw;
-    align-items: center;
-    padding: 5vw;
-  }
-
-  .mobileLevelHeading {
-    grid-column-end: span 2;
-  }
-
-  .levelContainer img:not(.levelBG) {
-    position: static !important;
-    /* background-color: #ff0072; */
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    max-height: 100px;
-    object-fit: contain;
-  }
-
-  .levelContainer {
-    background-size: cover;
-    position: center center;
-    background-attachment: fixed;
-    box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.6);
-  }
-
   .levelContainer img.levelBG {
     display: none;
   }
-  .mobileLvl1 {
-    background-image: url("mobileLvl1.jpeg") !important;
+  .levelContainer img:not(.levelBG) {
+      position: relative !important;
+      width: 100%;
+      max-height: 100px;
+      object-fit: contain;
+    }
+  .levelContainer {
+    background-image: url("level_s.jpeg") !important;
     background-size: cover !important;
     background-position: center center !important;
     position: relative !important;
-  }
+    position: center center;
+    background-attachment: fixed;
 
-  #img0 {
-    position: absolute;
-    top: 5%;
-  }
+    }
+#img0 {
+  top: 60%;
+}
 
-  #img0_2, #img0_3, #img0_4, #img0_5, #img0_6 {
-    display: none;
-  }
-
-  .mobileLvl2 {
-    background-image: url("mobileLvl1.jpeg");
-  }
-
-  .level2 {
-    background-image: url('limbo1.jpg');
-
-  }
-
-  .level3 {
-    background-image: url('lust.png');
-  }
 }
