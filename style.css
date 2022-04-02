@@ -355,26 +355,65 @@ body, html {
 
 @media only screen and (max-width: 600px) {
 
+  body {
+    color: #eee;
+    font-size: 3vw;
+  }
+
+  .levelContainer > h2, .levelContainer > h3 {
+    display: block;
+    text-shadow: 0px 0px 4px #000;
+  }
+
+  h2 {
+    font-style: italic;
+    letter-spacing: 0.6em;
+    padding: 2vw;
+    border-bottom: 1px solid white;
+  }
+
+  .levelContainer:not(.level1) {
+    position: relative !important;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 10vw;
+    grid-row-gap: 10vw;
+    align-items: center;
+    padding: 5vw;
+  }
+
+  .mobileLevelHeading {
+    grid-column-end: span 2;
+  }
+
+  .levelContainer img:not(.levelBG) {
+    position: static !important;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+  }
+
+  .levelContainer {
+    background-image: url("level_s.jpeg") !important;
+    background-size: cover;
+    position: center center;
+    background-attachment: fixed;
+    position: relative !important;
+  }
+
   .levelContainer img.levelBG {
     display: none;
   }
-  .levelContainer img:not(.levelBG) {
-      position: relative !important;
-      width: 100%;
-      max-height: 100px;
-      object-fit: contain;
-    }
-  .levelContainer {
-    background-image: url("level_s.jpeg") !important;
-    background-size: cover !important;
-    background-position: center center !important;
-    position: relative !important;
-    position: center center;
-    background-attachment: fixed;
 
-    }
-#img0 {
-  top: 60%;
-}
+  #img0 {
+    position: absolute;
+    padding-top: 10px;
+  }
+
+  #img0_1, #img0_2, #img0_3, #img0_4, #img0_5, #img0_6, #img0_7, #img0_8, #img0_9 #img0_10, #img0_11{
+    display: none;
+  }
 
 }
