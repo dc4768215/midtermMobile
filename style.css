@@ -362,7 +362,7 @@ body, html {
 
   .levelContainer > h2, .levelContainer > h3 {
     display: block;
-    text-shadow: 0px 0px 4px #000;
+    text-shadow: 0px 0px 20px #000;
   }
 
   h2 {
@@ -370,12 +370,13 @@ body, html {
     letter-spacing: 0.6em;
     padding: 2vw;
     border-bottom: 1px solid white;
+    text-align: center;
   }
 
   .levelContainer:not(.level1) {
     position: relative !important;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 10vw;
     grid-row-gap: 10vw;
     align-items: center;
@@ -412,7 +413,10 @@ body, html {
     padding-top: 10px;
   }
 
-  #img0_1, #img0_2, #img0_3, #img0_4, #img0_5, #img0_6, #img0_7, #img0_8, #img0_9 #img0_10, #img0_11{
+  #img0_1, #img0_2, #img0_3, #img0_4, #img0_5, #img0_6, #img0_7, #img0_8, #img0_9{
+    display: none;
+  }
+  #img0_10, #img0_11, #hands, #img3_4, #img4_2{
     display: none;
   }
 
